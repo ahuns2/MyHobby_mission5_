@@ -2,23 +2,29 @@
     ViewData["Title"] = "Clash of Clans Tutoring Calculator";
 }
 
+<!-- Introduces to the view-->
+
 <h1>Clash of Clans Tutoring Calculator</h1>
 
+<!-- This makes the inpute box where the user can add how many hours they need-->
 <div>
     <label for="hours">Number of Hours Needed:</label>
     <input type="number" id="hours" min="0" step="1" />
     <span id="hoursError" class="text-danger"></span>
 </div>
 
+<!-- This shows my hourly rate-->
 <div>
     <label>Hourly Rate:</label>
     <input type="text" id="hourlyRate" value="$25" readonly />
 </div>
 
+<!-- Links to the calculator Javascript with a button-->
 <div>
     <button id="calculateBtn">Calculate Total</button>
 </div>
 
+<!-- Displays the total cost-->
 <div>
     <label>Total Cost:</label>
     <output id="totalCost"></output>
