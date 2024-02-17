@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Clash of Clans Tutoring Calculator";
+}
+
+<h1>Clash of Clans Tutoring Calculator</h1>
+
+<div>
+    <label for="hours">Number of Hours Needed:</label>
+    <input type="number" id="hours" min="0" step="1" />
+    <span id="hoursError" class="text-danger"></span>
+</div>
+
+<div>
+    <label>Hourly Rate:</label>
+    <input type="text" id="hourlyRate" value="$25" readonly />
+</div>
+
+<div>
+    <button id="calculateBtn">Calculate Total</button>
+</div>
+
+<div>
+    <label>Total Cost:</label>
+    <output id="totalCost"></output>
+</div>
+
+<a href="@Url.Action("Index", "Home")">Back to Home</a>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/calculator.js"></script>
+}
